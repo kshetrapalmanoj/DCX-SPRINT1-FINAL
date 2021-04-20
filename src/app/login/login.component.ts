@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MessageService } from 'src/message.service';
 import { AuthLoginService } from '../auth-login.service';
 import { developer } from '.././developers';
 import { DevelopersService } from '.././developers.service';
@@ -21,7 +20,6 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private authService: AuthLoginService,
-    public messageService: MessageService,
     private developerService: DevelopersService
   ) {}
 
@@ -43,7 +41,7 @@ export class LoginComponent implements OnInit {
       );
     }
   }
-
+  //Form to Register New developer
   developerForm: FormGroup;
   group = ['Developer'];
   message1 = false;

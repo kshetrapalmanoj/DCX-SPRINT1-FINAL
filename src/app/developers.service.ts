@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { developer } from './developers';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -13,8 +14,8 @@ export class DevelopersService {
 
   constructor(private http: HttpClient) {}
 
-  url = 'http://localhost:3000/api/developer/register';
-  urlInfo = 'http://localhost:3000/verify/data';
+  url = `${environment.url}/api/developer/register`;
+  urlInfo = `${environment.url}/verify/data`;
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };

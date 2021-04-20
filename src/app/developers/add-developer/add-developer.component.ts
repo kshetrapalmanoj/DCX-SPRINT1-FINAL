@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { developer } from '../../developers';
 import { DevelopersService } from '../../developers.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-developer',
@@ -9,6 +10,7 @@ import { DevelopersService } from '../../developers.service';
   styleUrls: ['./add-developer.component.css'],
 })
 export class AddDeveloperComponent implements OnInit {
+  //new form developerForm
   developerForm: FormGroup;
   group = ['Admin', 'Developer'];
   message = false;
@@ -19,8 +21,13 @@ export class AddDeveloperComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private developerService: DevelopersService
+    private developerService: DevelopersService,
+    private router: Router
   ) {}
+  logout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['login']);
+  }
 
   onSubmit(): void {
     console.log('Developer Details:', this.developers);

@@ -12,12 +12,11 @@ describe('LoginComponent', () => {
   let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(() => {
-     TestBed.configureTestingModule({
-      declarations: [ LoginComponent ],
-      imports:[ReactiveFormsModule,HttpClientModule,RouterTestingModule],
-      providers:[AuthLoginService]
-    })
-    .compileComponents();
+    TestBed.configureTestingModule({
+      declarations: [LoginComponent],
+      imports: [ReactiveFormsModule, HttpClientModule, RouterTestingModule],
+      providers: [AuthLoginService],
+    }).compileComponents();
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -30,5 +29,4 @@ describe('LoginComponent', () => {
   it('should have a defined component', () => {
     expect(component).toBeDefined();
   });
-
 });
