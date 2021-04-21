@@ -1,5 +1,4 @@
 import { AboutComponent } from './about/about.component';
-import { RegisterComponent } from './register/register.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -35,7 +34,6 @@ import {MatTabsModule} from '@angular/material/tabs';
     LoginComponent,
     AddDeveloperComponent,
     GetDevelopersComponent,
-    RegisterComponent,
     ContactComponent,
     AboutComponent
   ],
