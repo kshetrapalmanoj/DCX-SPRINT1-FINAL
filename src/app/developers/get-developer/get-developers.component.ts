@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DevelopersService } from '../../developers.service';
-import { developer } from '../../developers';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -39,6 +38,10 @@ export class GetDevelopersComponent implements OnInit {
     this.p = p1;
   }
 
+  logout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['login']);
+  }
   ngOnInit(): void {
     this.p = parseInt(this.route.snapshot.paramMap.get('no'));
     if (isNaN(this.p)) {
