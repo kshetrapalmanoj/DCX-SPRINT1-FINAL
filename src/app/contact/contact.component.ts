@@ -1,6 +1,4 @@
 import { ServicesService } from './../services.service';
-import { HttpClient } from '@angular/common/http';
-import { MessageService } from './../../message.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -15,13 +13,11 @@ export class ContactComponent implements OnInit {
   // message=""
   angForm: FormGroup;
   constructor(
+    //dependency injection
     private fb: FormBuilder,
-    private messageservice: MessageService,
-    private http: HttpClient,
     private contact: ServicesService,
     private router: Router
   ) {
-    //dependency injection
     this.createForm();
   }
   createForm() {

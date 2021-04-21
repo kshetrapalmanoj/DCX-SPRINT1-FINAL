@@ -1,70 +1,50 @@
 <p>update works!</p>
 <!DOCTYPE html>
 <html manifest="developer.manifest">
-  <head>
-    <title>DCX Developer Directory</title>
 
-  </head>
+<head>
+  <title>DCX Developer Directory</title>
 
-  <body>
-    <div id="container">
-      <header>
-        <h1><span class="blueText">DCX</span> Developer Directory</h1>
-        <h2>Find A Developer <span class="whiteText">NOW</span></h2>
-      </header>
+</head>
 
-      <nav id="menu">
+<body>
+  <div id="container">
+    <header>
+      <h1><span class="blueText">DCX</span> Developer Directory</h1>
+      <h2>Find A Developer <span class="whiteText">NOW</span></h2>
+    </header>
+
+    <aside>
+      <nav id="leftMenu">
+        <h3>Links</h3>
         <ul>
-          <li class="menuitem"><a href="dashboard" routerLink="/home.html">Home</a></li>
-          <li class="menuitem"><a href="about" routerLink="/about">About Us</a></li>
-          <li class="menuitem"><a href="browse"  routerLink="/browse">Browse Developers</a></li>
-          <li class="menuitem">
-            <a href="register" routerLink="/register">Register As Developer</a>
-          </li>
-          <li class="menuitem"><a href="contact"  routerLink="/contact">Contact Us</a></li>
-          <li><a routerLink='/login'>Logout</a></li>
-
-
-
+          <li><a href="browse">SEO</a></li>
+          <li><a href="browse">PHP</a></li>
+          <li><a href="browse">Ajax</a></li>
+          <li><a href="browse">jQuery</a></li>
+          <li><a href="browse">Web design</a></li>
+          <li><a href="browse">Web Programming</a></li>
+          <li><a href="browse">Content Creation</a></li>
+          <li><a href="browse">Internet Marketing</a></li>
+          <li><a href="browse">XHTML Templates</a></li>
         </ul>
-        <div id="displayName">
-        </div>
-
+        <br /><br />
       </nav>
-      <aside>
-        <nav id="leftMenu">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="browse">SEO</a></li>
-            <li><a href="browse">PHP</a></li>
-            <li><a href="browse">Ajax</a></li>
-            <li><a href="browse">jQuery</a></li>
-            <li><a href="browse">Web design</a></li>
-            <li><a href="browse">Web Programming</a></li>
-            <li><a href="browse">Content Creation</a></li>
-            <li><a href="browse">Internet Marketing</a></li>
-            <li><a href="browse">XHTML Templates</a></li>
-          </ul>
-          <br /><br />
-        </nav>
-      </aside>
-      <section>
-        <h2>Welcome to DCX Developer Directory!</h2>
+    </aside>
+    <section>
+      <h2>Welcome to DCX Developer Directory!</h2>
 
-  <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
 
-      </section>
-    </div>
+    </section>
+  </div>
 
-    <div style="clear: both"></div>
+  <div style="clear: both"></div>
 
-    <footer>
-      Copyright 2017. DCX Developer Directory -
-      <a href="info" style="color: #ffffff">Info </a>
-    </footer>
-  </body>
+  <footer>
+    Copyright 2017. DCX Developer Directory -
+    <a href="info" style="color: #ffffff">Info </a>
+  </footer>
+</body>
+
 </html>
-
-
-
-

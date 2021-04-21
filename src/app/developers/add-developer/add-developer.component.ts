@@ -15,7 +15,6 @@ export class AddDeveloperComponent implements OnInit {
   group = ['Admin', 'Developer'];
   message = false;
   submitted: boolean;
-  message1 = '';
 
   developers: developer = { full_name: '', email: '', password: '', group: '' };
 
@@ -36,7 +35,6 @@ export class AddDeveloperComponent implements OnInit {
       (data) => {
         console.log(data);
         this.message = true;
-        this.message1 = 'Developer Added successfully!';
       },
       (error) => {
         this.message = error.error.message;

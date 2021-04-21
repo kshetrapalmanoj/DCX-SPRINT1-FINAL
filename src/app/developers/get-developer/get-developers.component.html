@@ -23,14 +23,15 @@
 
     <nav id="menu">
       <ul>
-        <li class="menuitem"><a href="dashboard">Home</a></li>
-        <li class="menuitem"><a href="about">About Us</a></li>
-        <li class="menuitem"><a href="browse/:no">Browse Developers</a></li>
-        <li class="menuitem"><a href="register">Register As Developer</a></li>
-        <li class="menuitem"><a href="contact">Contact Us</a></li>
+        <li class="menuitem"><a href="dashboard" routerLink="/dashboard">Home</a></li>
+        <li class="menuitem"><a href="about" routerLink="/about">About Us</a></li>
+        <li class="menuitem"><a href="browse/:no" routerLink="/browse/:no">Browse Developers</a></li>
+        <li class="menuitem"><a href="register" routerLink="/register">Register As Developer</a></li>
+        <li class="menuitem"><a href="contact" routerLink="/contact">Contact Us</a></li>
         <li class="menuitem"><a href="login" (click)="logout()">Logout</a></li>
       </ul>
     </nav>
+
 
     <nav id="leftMenu">
       <h3>Links</h3>

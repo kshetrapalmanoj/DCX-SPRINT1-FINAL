@@ -2,6 +2,7 @@ import { ServicesService } from './../services.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { ContactComponent } from './contact.component';
 
@@ -11,11 +12,10 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent ],
-      imports:[ReactiveFormsModule,HttpClientModule],
-      providers: [ServicesService]
-    })
-    .compileComponents();
+      declarations: [ContactComponent],
+      imports: [ReactiveFormsModule, HttpClientModule, RouterTestingModule],
+      providers: [ServicesService],
+    }).compileComponents();
   });
 
   beforeEach(() => {
