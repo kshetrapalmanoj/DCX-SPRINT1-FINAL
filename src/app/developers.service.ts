@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { developer } from './developers';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -14,8 +13,8 @@ export class DevelopersService {
 
   constructor(private http: HttpClient) {}
 
-  url = `${environment.baseUrl}/api/developer/register`;
-  urlInfo = `${environment.baseUrl}/verify/data`;
+  url = 'https://dcx-app-server.herokuapp.com/api/developer/register';
+  urlInfo = 'https://dcx-app-server.herokuapp.com/verify/data';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
