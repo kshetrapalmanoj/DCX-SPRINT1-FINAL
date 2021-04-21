@@ -3,8 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: true,
-  url: 'https://dcx-app-server.herokuapp.com',
+  production: false,
 };
 
 /*
