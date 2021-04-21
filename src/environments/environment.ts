@@ -4,8 +4,6 @@
 
 export const environment = {
   production: false,
-  url: 'https://dcx-app-server.herokuapp.com',
-  envName: 'Local',
 };
 
 /*
